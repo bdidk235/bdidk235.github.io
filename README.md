@@ -1,2 +1,2 @@
 # bdidk235.github.io
-Random Stuff
+For the funny, I guess.
