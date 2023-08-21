@@ -4,7 +4,12 @@
 }
 
 body {
-	background-color: black;
+	background-color: #0f1111;
+}
+
+img, video {
+	width: 40em;
+	height: auto;
 }
 
 a {
@@ -23,20 +28,34 @@ a:visited {
 	color: rgb(162, 148, 255);
 }
 
-.header {
+.unlink {
 	text-decoration: none !important;
 	color: white !important;
+}
+
+.unlink-color {
+	color: white !important;
+}
+
+.header {
 	display: table-cell;
 	font-size: 2em;
 	font-weight: bold;
 	padding-bottom: 0.25em;
 }
 
-.header::before {
+.header3 {
+	display: table-cell;
+	font-size: 1.17em;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+}
+
+.index-header::before {
 	content: "Welcome to My Webpage!";
 }
 
-.header:hover::before {
+.index-header:hover::before {
 	content: "Welcome to My Meme Page!";
 }
 
@@ -48,6 +67,6 @@ a:visited {
 	content: "my twitter";
 }
 
-.x-intro:visited:hover::after {
+.x-intro:hover::after {
 	content: " (credits to gx brand account)";
 }
