@@ -1,0 +1,53 @@
+* {
+	color: white;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+body {
+	background-color: black;
+}
+
+a {
+	text-decoration: none;
+	text-decoration-color: currentcolor;
+	color: rgb(158, 225, 255);
+	background-color: rgba(0, 0, 0, 0);
+	background-image: none;
+}
+
+a:hover, a:focus {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: rgb(162, 148, 255);
+}
+
+.header {
+	text-decoration: none !important;
+	color: white !important;
+	display: table-cell;
+	font-size: 2em;
+	font-weight: bold;
+	padding-bottom: 0.25em;
+}
+
+.header::before {
+	content: "Welcome to My Webpage!";
+}
+
+.header:hover::before {
+	content: "Welcome to My Meme Page!";
+}
+
+.twitter-text::before {
+	content: "my 𝕏";
+}
+
+.twitter-text:hover::before {
+	content: "my twitter";
+}
+
+.x-intro:visited:hover::after {
+	content: " (credits to gx brand account)";
+}
