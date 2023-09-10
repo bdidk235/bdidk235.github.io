@@ -1,10 +1,7 @@
-* {
-	color: white;
-	font-family: "Comic Sans MS", "Comic Sans", cursive;
-}
-
 body {
 	background-color: #0f1111;
+	color: white;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 img, video {
@@ -20,12 +17,28 @@ a {
 	background-image: none;
 }
 
+footer {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding: 0.7em;
+	cursor: default;
+}
+
 a:hover, a:focus {
 	text-decoration: underline;
 }
 
 a:visited {
 	color: rgb(162, 148, 255);
+}
+
+.table-cell {
+	display: table-cell;
+}
+
+.table-row {
+	display: table-row;
 }
 
 .unlink {
@@ -58,6 +71,10 @@ a:visited {
 .index-header:hover::before {
 	content: "Welcome to My Meme Page!";
 }
+
+.reimagined:hover::after {
+	content: " (very cool)";
+}	
 
 .twitter-text::before {
 	content: "my 𝕏";
