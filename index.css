@@ -83,7 +83,3 @@ a:visited {
 .twitter-text:hover::before {
 	content: "my twitter";
 }
-
-.x-intro:hover::after {
-	content: " (credits to gx brand account)";
-}
