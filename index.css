@@ -17,6 +17,12 @@ a {
 	background-image: none;
 }
 
+a.table-row {
+	text-transform: lowercase;
+	transform-origin: left;
+	transition: transform linear 0.125s;
+}
+
 footer {
 	position: fixed;
 	bottom: 0;
@@ -25,7 +31,16 @@ footer {
 	cursor: default;
 }
 
+footer > div {
+	transition: transform linear 0.5s;
+}
+
+footer:hover > div {
+	transform: rotate(360deg);
+}
+
 a:hover, a:focus {
+	text-transform: none;
 	text-decoration: underline;
 }
 
@@ -67,24 +82,24 @@ a:hover, a:focus {
 	padding-bottom: 0.5em;
 }
 
-.index-header::before {
-	content: "Welcome to My Webpage!";
-}
-
-.index-header:hover::before {
-	content: "Welcome to My Meme Page!";
-}
-
-.reimagined:hover::after {
+.roblox-style-tweaks:hover::after {
 	content: " (very cool)";
-}	
+}
 
 .twitter-text::before {
 	content: "my 𝕏";
 }
 
 .twitter-text:hover::before {
-	content: "my twitter";
+	content: "My Twitter";
+}
+
+input:not(:checked) + label.email-text::before {
+	content: "email captcha";
+}
+
+input:checked + label.email-text::before {
+	content: "bdidk235@gmail.com";
 }
 
 @keyframes spin {
